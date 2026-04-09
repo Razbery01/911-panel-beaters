@@ -1,3 +1,11 @@
+// Preloader
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) preloader.classList.add('hidden');
+    }, 600);
+});
+
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
@@ -6,13 +14,15 @@ const navbar = document.getElementById('navbar');
 navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active');
     navMenu.classList.toggle('active');
+    document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
 });
 
-// Close mobile menu when a link is clicked
+// Close mobile menu on link click
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         navToggle.classList.remove('active');
         navMenu.classList.remove('active');
+        document.body.style.overflow = '';
     });
 });
 
@@ -25,7 +35,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Smooth scroll offset for sticky nav
+// Smooth scroll with offset
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const targetId = this.getAttribute('href');
@@ -43,24 +53,60 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Simple intersection observer for reveal animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
+// Scroll reveal animations
+const animatedEls = document.querySelectorAll('[data-animate]');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            const delay = entry.target.getAttribute('data-delay') || 0;
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, delay);
+            observer.unobserve(entry.target);
         }
     });
-}, observerOptions);
-
-document.querySelectorAll('.service-card, .spec-card, .about-card, .insurer-card, .process-step').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -60px 0px'
 });
+
+animatedEls.forEach(el => observer.observe(el));
+
+// Auto-animate service/spec/process cards even without explicit data-animate
+document.querySelectorAll('.service-card, .spec-card, .process-step, .insurer-card, .contact-item').forEach((el, i) => {
+    if (!el.hasAttribute('data-animate')) {
+        el.setAttribute('data-animate', 'fade-up');
+        el.setAttribute('data-delay', (i % 3) * 100);
+        observer.observe(el);
+    }
+});
+
+// Animated counters
+const counters = document.querySelectorAll('.hero-stat-num');
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.getAttribute('data-count'));
+            const duration = 2000;
+            const startTime = performance.now();
+
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const value = Math.floor(eased * target);
+                el.textContent = value.toLocaleString();
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    el.textContent = target.toLocaleString();
+                }
+            }
+            requestAnimationFrame(update);
+            counterObserver.unobserve(el);
+        }
+    });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => counterObserver.observe(counter));

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+  <rect width="240" height="80" fill="#ffffff"/>
+  <g transform="translate(20,20)">
+    <rect x="0" y="0" width="44" height="40" rx="4" fill="#E30613"/>
+    <text x="22" y="28" font-family="Arial Black, sans-serif" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">RMI</text>
+  </g>
+  <text x="76" y="36" font-family="Arial Black, sans-serif" font-size="15" font-weight="900" fill="#1A1F2E">Retail Motor</text>
+  <text x="76" y="54" font-family="Arial Black, sans-serif" font-size="15" font-weight="900" fill="#1A1F2E">Industry</text>
+</svg>

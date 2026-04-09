@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>911 Panel Beaters | Insurance Approved Panel Beaters Durban South</title>
-    <meta name="description" content="911 Panel Beaters - Durban South's trusted accident repair centre with over 30 years of experience. SAMBRA accredited, insurance approved, specialising in Toyota Quantum, Hi-Ace, VW Crafter and fleet repairs.">
+    <title>911 Panel Beaters | Durban South's One Stop Panelshop</title>
+    <meta name="description" content="911 Panel Beaters — Durban South's trusted accident repair centre. 30+ years experience, SAMBRA accredited, insurance approved. Specialists in Toyota Quantum, Hi-Ace, VW Crafter and commercial fleet repairs. 87 Hime Lane, Jacobs.">
+    <meta name="theme-color" content="#0A0E1A">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <img src="images/logo.png" alt="911 Panel Beaters" class="preloader-logo">
+            <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+        </div>
+    </div>
+
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container top-bar-inner">
             <div class="top-bar-left">
-                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 87 Hime Lane, Jacobs, Durban South</span>
-                <span class="top-bar-hide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Mon–Fri 08:00–17:00</span>
+                <span class="top-bar-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>87 Hime Lane, Jacobs, Durban South</span>
+                <span class="top-bar-item top-bar-hide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon–Fri 08:00–17:00</span>
             </div>
             <div class="top-bar-right">
-                <a href="tel:+27314611786"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 031 461 1786</a>
-                <a href="tel:+27828752376" class="top-bar-hide">After Hours: 082 875 2376</a>
+                <a href="tel:+27314611786" class="top-bar-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>031 461 1786</a>
+                <a href="tel:+27828752376" class="top-bar-item top-bar-hide">After Hours: 082 875 2376</a>
             </div>
         </div>
     </div>
@@ -29,10 +39,7 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#home" class="nav-logo">
-                <div class="logo-mark">
-                    <span class="logo-911">911</span>
-                    <span class="logo-sub">PANEL BEATERS</span>
-                </div>
+                <img src="images/logo.png" alt="911 Panel Beaters" class="nav-logo-img">
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
@@ -44,48 +51,107 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#insurers" class="nav-link">Insurers</a></li>
-                <li><a href="#specialisations" class="nav-link">Specialisations</a></li>
-                <li><a href="#contact" class="nav-link nav-cta">Get a Quote</a></li>
+                <li><a href="#specialisations" class="nav-link">Vehicles</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Get a Quote <span>→</span></a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-overlay"></div>
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-gradient"></div>
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
         <div class="container hero-content">
-            <p class="hero-tagline">30+ Years of Precision Panel Beating</p>
-            <h1>Durban South's Trusted<br><span class="hero-accent">Accident Repair</span> Specialists</h1>
-            <p class="hero-sub">SAMBRA accredited. Insurance approved. Fleet-ready. A 1200m² workshop handling up to 50 vehicles at a time — restoring cars, commercial vehicles and taxis to factory standard.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Request a Quote</a>
-                <a href="tel:+27314611786" class="btn btn-outline">Call 031 461 1786</a>
+            <div class="hero-left">
+                <div class="hero-label" data-animate="fade-up">
+                    <span class="hero-label-dot"></span>
+                    30+ YEARS • DURBAN SOUTH • EST. EXCELLENCE
+                </div>
+                <h1 data-animate="fade-up" data-delay="100">
+                    <span class="hero-line">Your One Stop</span>
+                    <span class="hero-line hero-line-accent">PANELSHOP<span class="blink">_</span></span>
+                </h1>
+                <p class="hero-sub" data-animate="fade-up" data-delay="200">
+                    Durban South's most trusted accident repair centre. SAMBRA accredited. Insurance approved. A 1200m² workshop handling up to 50 vehicles at a time — restoring cars, taxis and commercial fleets to factory standard.
+                </p>
+                <div class="hero-buttons" data-animate="fade-up" data-delay="300">
+                    <a href="#contact" class="btn btn-primary">
+                        Request a Quote
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="tel:+27314611786" class="btn btn-ghost">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        031 461 1786
+                    </a>
+                </div>
+                <div class="hero-stats" data-animate="fade-up" data-delay="400">
+                    <div class="hero-stat">
+                        <span class="hero-stat-num" data-count="30">0</span><span class="hero-stat-plus">+</span>
+                        <span class="hero-stat-label">Years<br>Experience</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num" data-count="1200">0</span>
+                        <span class="hero-stat-label">m² Repair<br>Facility</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num" data-count="50">0</span>
+                        <span class="hero-stat-label">Vehicle<br>Capacity</span>
+                    </div>
+                </div>
             </div>
-            <div class="hero-badges">
-                <div class="badge-item">
-                    <strong>30+</strong>
-                    <span>Years Experience</span>
-                </div>
-                <div class="badge-item">
-                    <strong>1200m²</strong>
-                    <span>Workshop</span>
-                </div>
-                <div class="badge-item">
-                    <strong>50</strong>
-                    <span>Vehicles at a time</span>
-                </div>
-                <div class="badge-item">
-                    <strong>Level 1</strong>
-                    <span>B-BBEE</span>
+            <div class="hero-right" data-animate="fade-left" data-delay="500">
+                <div class="hero-card">
+                    <div class="hero-card-glow"></div>
+                    <div class="hero-card-content">
+                        <div class="hero-card-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 7v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V7l-8-5z"/><path d="M9 12l2 2 4-4"/></svg>
+                            SAMBRA ACCREDITED
+                        </div>
+                        <h3>Advanced Structural Repairer</h3>
+                        <ul class="hero-card-list">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Level 1 B-BBEE Black-Owned</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Audatex & Abuntex Certified</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Fleet & Insurance Approved</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Manufacturer Approved</li>
+                        </ul>
+                        <a href="#about" class="hero-card-link">Learn more <span>→</span></a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="hero-scroll">
+            <span>SCROLL</span>
+            <div class="hero-scroll-line"></div>
+        </div>
     </section>
 
-    <!-- Trust Bar -->
-    <section class="trust-bar">
-        <div class="container">
-            <p class="trust-text">SAMBRA / RMI Advanced Structural Repairer &nbsp;&nbsp;•&nbsp;&nbsp; Level 1 B-BBEE Black-Owned &nbsp;&nbsp;•&nbsp;&nbsp; Audatex & Abuntex Certified &nbsp;&nbsp;•&nbsp;&nbsp; Insurance Approved</p>
+    <!-- Marquee Trust Bar -->
+    <section class="marquee">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>★ SAMBRA ACCREDITED</span>
+                <span>★ RMI MEMBER</span>
+                <span>★ LEVEL 1 B-BBEE</span>
+                <span>★ 30+ YEARS EXPERIENCE</span>
+                <span>★ INSURANCE APPROVED</span>
+                <span>★ FLEET SPECIALISTS</span>
+                <span>★ 1200m² WORKSHOP</span>
+                <span>★ BLACK-OWNED</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span>★ SAMBRA ACCREDITED</span>
+                <span>★ RMI MEMBER</span>
+                <span>★ LEVEL 1 B-BBEE</span>
+                <span>★ 30+ YEARS EXPERIENCE</span>
+                <span>★ INSURANCE APPROVED</span>
+                <span>★ FLEET SPECIALISTS</span>
+                <span>★ 1200m² WORKSHOP</span>
+                <span>★ BLACK-OWNED</span>
+            </div>
         </div>
     </section>
 
@@ -93,55 +159,56 @@
     <section class="section about" id="about">
         <div class="container">
             <div class="about-grid">
-                <div class="about-text">
-                    <p class="section-label">About 911 Panel Beaters</p>
-                    <h2>Three Decades of <span class="accent-red">Trusted</span> Accident Repairs</h2>
-                    <p>Based in the heart of Jacobs Industrial Area, Durban South, 911 Panel Beaters has been restoring damaged vehicles to factory condition for over 30 years. What started as a specialist workshop has grown into one of KZN's most established high-volume repair centres.</p>
-                    <p>We're a proudly Level 1 B-BBEE black-owned business with a qualified team of trained technicians working across a 1200m² facility. Our scale and systems — including Audatex and Abuntex for accurate quoting — allow us to handle up to 50 vehicles at any one time without compromising on quality.</p>
-                    <p>From insurance repair work to fleet contracts with SAPS, SANDF and commercial operators, our reputation has been built one repair at a time.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">30+</span>
-                            <span class="stat-label">Years in the Industry</span>
+                <div class="about-text" data-animate="fade-up">
+                    <p class="section-label"><span class="label-line"></span> ABOUT 911 PANEL BEATERS</p>
+                    <h2 class="section-title">Three Decades of<br><span class="outline-text">Precision</span> Repairs</h2>
+                    <p class="about-lead">Based in the heart of Jacobs Industrial Area, we've been restoring damaged vehicles to factory condition since the mid-nineties — earning the trust of insurers, fleet operators and drivers across KZN.</p>
+                    <p>What started as a specialist workshop has grown into one of KwaZulu-Natal's most established high-volume repair centres. Proudly Level 1 B-BBEE and black-owned, our qualified team operates across a 1200m² facility using industry-leading systems like Audatex and Abuntex for transparent, insurance-ready quoting.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 7v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V7l-8-5z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Advanced Structural Repairer</h4>
+                                <p>SAMBRA certified at the highest level for structural and safety-critical work.</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">1200<small>m²</small></span>
-                            <span class="stat-label">Repair Facility</span>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>
+                            </div>
+                            <div>
+                                <h4>Insurance Panel Repairer</h4>
+                                <p>Direct claims handling with SA's top insurers — we manage the paperwork.</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">50</span>
-                            <span class="stat-label">Vehicle Capacity</span>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
+                            </div>
+                            <div>
+                                <h4>Fleet & Commercial Experts</h4>
+                                <p>Trusted by SAPS, SANDF and KZN's biggest transport operators.</p>
+                            </div>
                         </div>
                     </div>
+                    <a href="#contact" class="btn btn-primary btn-inline">Get in Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                 </div>
-                <div class="about-visual">
-                    <div class="about-card">
-                        <div class="about-card-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L4 7v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V7l-8-5z"/><path d="M9 12l2 2 4-4"/></svg>
+                <div class="about-visual" data-animate="fade-left">
+                    <div class="about-image-wrap">
+                        <div class="about-image-overlay"></div>
+                        <div class="about-image-tag">
+                            <span class="about-image-tag-num">1200<small>m²</small></span>
+                            <span class="about-image-tag-label">Workshop Floor</span>
                         </div>
-                        <h3>SAMBRA Accredited</h3>
-                        <p>Advanced Structural Repairer status — the highest level of repair certification in South Africa.</p>
+                        <div class="about-image-grid"></div>
                     </div>
-                    <div class="about-card">
-                        <div class="about-card-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>
+                    <div class="about-badge">
+                        <div class="about-badge-inner">
+                            <span class="about-badge-big">30+</span>
+                            <span class="about-badge-small">YEARS<br>IN BUSINESS</span>
                         </div>
-                        <h3>Insurance Approved</h3>
-                        <p>Authorised repairer for Hollard, Santam, Old Mutual, Bryte, SA Taxi and more.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-card-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
-                        </div>
-                        <h3>Fleet Specialists</h3>
-                        <p>Trusted by SAPS, SANDF and commercial fleet operators across KZN.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-card-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
-                        </div>
-                        <h3>Level 1 B-BBEE</h3>
-                        <p>Proudly black-owned, contributing maximum procurement recognition for your business.</p>
                     </div>
                 </div>
             </div>
@@ -151,53 +218,65 @@
     <!-- Services Section -->
     <section class="section services" id="services">
         <div class="container">
-            <div class="section-header">
-                <p class="section-label center">Our Services</p>
-                <h2 class="section-title">Complete Accident Repair Solutions</h2>
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label center"><span class="label-line"></span> WHAT WE DO <span class="label-line"></span></p>
+                <h2 class="section-title center">Complete Collision<br><span class="outline-text">Repair</span> Solutions</h2>
                 <p class="section-sub">From minor dents to major structural repairs — everything your vehicle needs, under one roof.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-animate="fade-up">
+                    <div class="service-number">01</div>
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
                     </div>
                     <h3>Accident Damage Repairs</h3>
-                    <p>Full collision repair service — from assessment to return — restoring your vehicle to pre-accident condition.</p>
+                    <p>Full collision repair service from assessment to return — restoring your vehicle to pre-accident condition with precision and care.</p>
+                    <div class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-number">02</div>
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
                     </div>
-                    <h3>Panel Beating & Structural Repairs</h3>
-                    <p>Advanced structural work on chassis and body panels using industry-leading equipment and techniques.</p>
+                    <h3>Panel Beating & Structural</h3>
+                    <p>Advanced structural work on chassis and body panels using industry-leading equipment, jigs and welding techniques.</p>
+                    <div class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-number">03</div>
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0H5a2 2 0 0 1-2-2v-4m6 6h10a2 2 0 0 0 2-2v-4M3 9h18M3 15h18"/></svg>
                     </div>
                     <h3>Spray Painting & Refinishing</h3>
-                    <p>Factory-matched colour refinishing in a controlled spray booth environment for a flawless finish.</p>
+                    <p>Factory-matched colour refinishing in a controlled spray booth environment for a flawless, showroom-quality finish.</p>
+                    <div class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-animate="fade-up">
+                    <div class="service-number">04</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
                     </div>
                     <h3>Dent Removal & Restoration</h3>
                     <p>Precision dent removal and full vehicle restoration — bringing old or damaged cars back to life.</p>
+                    <div class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-number">05</div>
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
                     </div>
                     <h3>Insurance Repair Work</h3>
-                    <p>Direct claims handling with all major insurers — we manage the process so you don't have to.</p>
+                    <p>Direct claims handling with all major insurers — we manage the entire process so you don't have to worry about a thing.</p>
+                    <div class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-number">06</div>
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4"/><polyline points="9 7 12 4 15 7"/><line x1="12" y1="4" x2="12" y2="16"/></svg>
                     </div>
                     <h3>Quotations & Assessments</h3>
                     <p>Accurate digital quoting powered by Audatex and Abuntex — transparent, fast and insurance-ready.</p>
+                    <div class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
                 </div>
             </div>
         </div>
@@ -206,95 +285,65 @@
     <!-- Insurers Section -->
     <section class="section insurers" id="insurers">
         <div class="container">
-            <div class="section-header">
-                <p class="section-label center">Accredited With</p>
-                <h2 class="section-title">Approved by South Africa's Leading Insurers</h2>
-                <p class="section-sub">We work directly with the country's top insurance providers to streamline your claim and get you back on the road.</p>
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label center"><span class="label-line"></span> ACCREDITED PARTNERS <span class="label-line"></span></p>
+                <h2 class="section-title center">Approved by<br>South Africa's <span class="outline-text">Leaders</span></h2>
+                <p class="section-sub">We work directly with the country's top insurance providers to streamline your claim and get you back on the road faster.</p>
             </div>
-            <div class="insurers-grid">
-                <div class="insurer-card">
-                    <div class="insurer-logo" data-brand="hollard">
-                        <span class="insurer-name">Hollard</span>
-                    </div>
-                </div>
-                <div class="insurer-card">
-                    <div class="insurer-logo" data-brand="santam">
-                        <span class="insurer-name">Santam</span>
-                    </div>
-                </div>
-                <div class="insurer-card">
-                    <div class="insurer-logo" data-brand="oldmutual">
-                        <span class="insurer-name">Old Mutual</span>
-                    </div>
-                </div>
-                <div class="insurer-card">
-                    <div class="insurer-logo" data-brand="bryte">
-                        <span class="insurer-name">Bryte</span>
-                    </div>
-                </div>
-                <div class="insurer-card">
-                    <div class="insurer-logo" data-brand="sataxi">
-                        <span class="insurer-name">SA Taxi</span>
-                    </div>
-                </div>
-                <div class="insurer-card">
-                    <div class="insurer-logo" data-brand="saps">
-                        <span class="insurer-name">SAPS</span>
-                    </div>
-                </div>
-                <div class="insurer-card">
-                    <div class="insurer-logo" data-brand="sandf">
-                        <span class="insurer-name">SANDF</span>
-                    </div>
-                </div>
-                <div class="insurer-card">
-                    <div class="insurer-logo" data-brand="sambra">
-                        <span class="insurer-name">SAMBRA</span>
-                    </div>
-                </div>
+            <div class="insurers-grid" data-animate="fade-up">
+                <div class="insurer-card"><img src="images/hollard.svg" alt="Hollard" loading="lazy"></div>
+                <div class="insurer-card"><img src="images/santam.svg" alt="Santam" loading="lazy"></div>
+                <div class="insurer-card"><img src="images/oldmutual.svg" alt="Old Mutual" loading="lazy"></div>
+                <div class="insurer-card"><img src="images/bryte.svg" alt="Bryte Insurance" loading="lazy"></div>
+                <div class="insurer-card"><img src="images/sataxi.svg" alt="SA Taxi" loading="lazy"></div>
+                <div class="insurer-card"><img src="images/sambra.svg" alt="SAMBRA" loading="lazy"></div>
+                <div class="insurer-card"><img src="images/rmi.svg" alt="RMI" loading="lazy"></div>
+                <div class="insurer-card"><img src="images/mazda.svg" alt="Mazda Approved" loading="lazy"></div>
             </div>
-            <p class="insurers-note">...and many more. Contact us to confirm your insurer is on our panel.</p>
+            <p class="insurers-note">...and many more. We also work with SAPS, SANDF and commercial fleet operators. Contact us to confirm your insurer is on our panel.</p>
         </div>
     </section>
 
     <!-- Specialisations Section -->
     <section class="section specialisations" id="specialisations">
         <div class="container">
-            <div class="section-header">
-                <p class="section-label center">Our Specialisations</p>
-                <h2 class="section-title">Commercial, Fleet & Taxi Experts</h2>
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label center"><span class="label-line"></span> VEHICLE SPECIALISTS <span class="label-line"></span></p>
+                <h2 class="section-title center">Commercial, Fleet &<br><span class="outline-text">Taxi</span> Experts</h2>
                 <p class="section-sub">While we repair all makes and models, these are the vehicles we know inside out.</p>
             </div>
             <div class="spec-grid">
-                <div class="spec-card">
-                    <div class="spec-marker"></div>
+                <div class="spec-card" data-animate="fade-up">
+                    <div class="spec-badge">Most Repaired</div>
+                    <div class="spec-icon"><svg viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 24 L4 14 Q4 10 8 10 L42 10 L50 18 L58 18 Q60 18 60 20 L60 24"/><circle cx="16" cy="24" r="4"/><circle cx="46" cy="24" r="4"/><line x1="20" y1="24" x2="42" y2="24"/><line x1="4" y1="24" x2="12" y2="24"/><line x1="50" y1="24" x2="60" y2="24"/></svg></div>
                     <h3>Toyota Quantum</h3>
-                    <p>The backbone of the South African taxi industry — and one of our most repaired vehicles.</p>
+                    <p>The backbone of the South African taxi industry — and one of our most repaired vehicles. Full structural and cosmetic repairs.</p>
                 </div>
-                <div class="spec-card">
-                    <div class="spec-marker"></div>
+                <div class="spec-card" data-animate="fade-up" data-delay="100">
+                    <div class="spec-icon"><svg viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 24 L4 12 Q4 8 8 8 L44 8 L52 16 L58 16 Q60 16 60 18 L60 24"/><circle cx="16" cy="24" r="4"/><circle cx="46" cy="24" r="4"/></svg></div>
                     <h3>Toyota Hi-Ace</h3>
-                    <p>Expert repairs on panel vans and minibuses used across the fleet and transport sectors.</p>
+                    <p>Expert repairs on panel vans and minibuses used across the fleet, delivery and transport sectors.</p>
                 </div>
-                <div class="spec-card">
-                    <div class="spec-marker"></div>
+                <div class="spec-card" data-animate="fade-up" data-delay="200">
+                    <div class="spec-icon"><svg viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 24 L4 10 Q4 6 8 6 L46 6 L54 14 L58 14 Q60 14 60 16 L60 24"/><circle cx="16" cy="24" r="4"/><circle cx="48" cy="24" r="4"/></svg></div>
                     <h3>VW Crafter</h3>
-                    <p>Full structural and cosmetic repairs for commercial Crafters and panel van variants.</p>
+                    <p>Full structural and cosmetic repairs for commercial Crafters and panel van variants — built for heavy-duty use.</p>
                 </div>
-                <div class="spec-card">
-                    <div class="spec-marker"></div>
+                <div class="spec-card" data-animate="fade-up">
+                    <div class="spec-icon"><svg viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 24 L4 14 Q4 10 8 10 L42 10 L50 18 L58 18 Q60 18 60 20 L60 24"/><circle cx="16" cy="24" r="4"/><circle cx="46" cy="24" r="4"/></svg></div>
                     <h3>Inyathi</h3>
-                    <p>Specialist experience with Inyathi minibuses and commercial models.</p>
+                    <p>Specialist experience with Inyathi minibuses and commercial models — we understand the unique repair requirements.</p>
                 </div>
-                <div class="spec-card">
-                    <div class="spec-marker"></div>
+                <div class="spec-card" data-animate="fade-up" data-delay="100">
+                    <div class="spec-badge">Approved</div>
+                    <div class="spec-icon"><svg viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 24 L4 16 Q4 12 8 12 L24 12 L28 6 L48 6 L54 12 L58 12 Q60 12 60 16 L60 24"/><circle cx="16" cy="24" r="4"/><circle cx="48" cy="24" r="4"/></svg></div>
                     <h3>Mazda (Approved)</h3>
-                    <p>Manufacturer-approved repairs on the full Mazda range using genuine parts and methods.</p>
+                    <p>Manufacturer-approved repairs on the full Mazda range using genuine parts and approved methods.</p>
                 </div>
-                <div class="spec-card spec-card-cta">
+                <div class="spec-card spec-card-cta" data-animate="fade-up" data-delay="200">
                     <h3>Need something else?</h3>
-                    <p>We repair all makes and models. Get in touch for a quote on your vehicle.</p>
-                    <a href="#contact" class="spec-link">Contact us →</a>
+                    <p>We repair all makes and models — from executive sedans to heavy commercial vehicles. Get in touch for a quote on your vehicle.</p>
+                    <a href="#contact" class="spec-link">Contact us <span>→</span></a>
                 </div>
             </div>
         </div>
@@ -303,27 +352,30 @@
     <!-- Process Section -->
     <section class="section process">
         <div class="container">
-            <div class="section-header">
-                <p class="section-label center">How It Works</p>
-                <h2 class="section-title">From Accident to Road — Made Simple</h2>
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label center"><span class="label-line"></span> HOW IT WORKS <span class="label-line"></span></p>
+                <h2 class="section-title center">From Accident to<br><span class="outline-text">Road</span> — Made Simple</h2>
             </div>
             <div class="process-steps">
-                <div class="process-step">
+                <div class="process-step" data-animate="fade-up">
                     <div class="process-number">01</div>
+                    <div class="process-line"></div>
                     <h3>Contact Us</h3>
                     <p>Call us or submit an online enquiry. We'll guide you through the next steps, even after hours.</p>
                 </div>
-                <div class="process-step">
+                <div class="process-step" data-animate="fade-up" data-delay="100">
                     <div class="process-number">02</div>
+                    <div class="process-line"></div>
                     <h3>Assessment & Quote</h3>
                     <p>We perform a full assessment using Audatex/Abuntex and submit directly to your insurer.</p>
                 </div>
-                <div class="process-step">
+                <div class="process-step" data-animate="fade-up" data-delay="200">
                     <div class="process-number">03</div>
+                    <div class="process-line"></div>
                     <h3>Approval & Repair</h3>
                     <p>Once authorised, our qualified technicians begin work using certified parts and methods.</p>
                 </div>
-                <div class="process-step">
+                <div class="process-step" data-animate="fade-up" data-delay="300">
                     <div class="process-number">04</div>
                     <h3>Quality Check & Handover</h3>
                     <p>Every repair passes a strict QC process before we hand your vehicle back — spotless and ready.</p>
@@ -334,13 +386,18 @@
 
     <!-- CTA Banner -->
     <section class="cta-banner">
+        <div class="cta-bg"></div>
         <div class="container">
-            <div class="cta-content">
-                <h2>Had an Accident? We're Ready to Help.</h2>
-                <p>Get a no-obligation assessment from Durban South's most trusted repair centre.</p>
+            <div class="cta-content" data-animate="fade-up">
+                <p class="cta-label">★ EMERGENCY READY ★</p>
+                <h2>Had an Accident?<br><span class="outline-text">We're Ready</span> to Help.</h2>
+                <p class="cta-sub">Get a no-obligation assessment from Durban South's most trusted repair centre.</p>
                 <div class="cta-buttons">
-                    <a href="tel:+27314611786" class="btn btn-primary">Call 031 461 1786</a>
-                    <a href="#contact" class="btn btn-outline-white">Request a Quote</a>
+                    <a href="tel:+27314611786" class="btn btn-primary btn-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Call 031 461 1786
+                    </a>
+                    <a href="#contact" class="btn btn-outline-white btn-large">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                 </div>
             </div>
         </div>
@@ -349,28 +406,28 @@
     <!-- Contact Section -->
     <section class="section contact" id="contact">
         <div class="container">
-            <div class="section-header">
-                <p class="section-label center">Get In Touch</p>
-                <h2 class="section-title">Request a Free Quote</h2>
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label center"><span class="label-line"></span> GET IN TOUCH <span class="label-line"></span></p>
+                <h2 class="section-title center">Request a <span class="outline-text">Free</span> Quote</h2>
                 <p class="section-sub">Fill in the form below or reach out directly — we'll get back to you as soon as possible.</p>
             </div>
             <div class="contact-grid">
-                <div class="contact-info">
+                <div class="contact-info" data-animate="fade-up">
                     <div class="contact-item">
                         <div class="contact-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
                         </div>
-                        <div>
-                            <h4>Visit Our Workshop</h4>
-                            <p>87 Hime Lane<br>Jacobs, Durban South<br>KwaZulu-Natal</p>
+                        <div class="contact-detail">
+                            <h4>Workshop</h4>
+                            <p>87 Hime Lane<br>Jacobs, Durban South<br>KwaZulu-Natal, 4052</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         </div>
-                        <div>
-                            <h4>Call Us</h4>
+                        <div class="contact-detail">
+                            <h4>Phone</h4>
                             <p><a href="tel:+27314611786">031 461 1786</a><br><a href="tel:+27314612786">031 461 2786</a><br><a href="tel:+27828752376">082 875 2376</a> <small>(after hours)</small></p>
                         </div>
                     </div>
@@ -378,8 +435,8 @@
                         <div class="contact-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                         </div>
-                        <div>
-                            <h4>Email Us</h4>
+                        <div class="contact-detail">
+                            <h4>Email</h4>
                             <p><a href="mailto:911panelbeaters@compudoc.co.za">911panelbeaters@compudoc.co.za</a></p>
                         </div>
                     </div>
@@ -387,13 +444,13 @@
                         <div class="contact-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                         </div>
-                        <div>
+                        <div class="contact-detail">
                             <h4>Opening Hours</h4>
                             <p>Mon–Fri: 08:00 – 17:00<br>Public Holidays: 09:00 – 13:00<br>Weekends: Closed</p>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm" action="https://formsubmit.co/911panelbeaters@compudoc.co.za" method="POST">
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/911panelbeaters@compudoc.co.za" method="POST" data-animate="fade-left">
                     <input type="hidden" name="_subject" value="New Quote Request - 911 Panel Beaters Website">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
@@ -425,7 +482,10 @@
                         <label for="message">Describe the Damage *</label>
                         <textarea id="message" name="message" rows="4" required placeholder="Brief description of what needs repair..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Request</button>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Send Request
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -436,11 +496,13 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo-mark logo-mark-footer">
-                        <span class="logo-911">911</span>
-                        <span class="logo-sub">PANEL BEATERS</span>
-                    </div>
+                    <img src="images/logo.png" alt="911 Panel Beaters" class="footer-logo">
                     <p>Durban South's trusted accident repair centre — over 30 years restoring vehicles to factory standard.</p>
+                    <div class="footer-accreditations">
+                        <span>SAMBRA</span>
+                        <span>RMI</span>
+                        <span>Level 1 B-BBEE</span>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
@@ -471,10 +533,17 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 911 Panel Beaters. All rights reserved. &nbsp;•&nbsp; SAMBRA / RMI Advanced Structural Repairer &nbsp;•&nbsp; Level 1 B-BBEE</p>
+                <p>&copy; 2026 911 Panel Beaters. All rights reserved.</p>
+                <p>SAMBRA / RMI Advanced Structural Repairer &nbsp;•&nbsp; Level 1 B-BBEE Black-Owned</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+27314611786" class="float-call" aria-label="Call 911 Panel Beaters">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="float-call-pulse"></span>
+    </a>
 
     <script src="script.js"></script>
 </body>
