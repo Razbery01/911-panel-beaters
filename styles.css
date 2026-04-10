@@ -308,7 +308,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     position: absolute;
     inset: 0;
     background:
-        url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1920') center/cover no-repeat;
+        url('images/panel-grinding.jpg') center/cover no-repeat;
     filter: brightness(0.3);
 }
 
@@ -726,13 +726,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .about-image-main {
     aspect-ratio: 3 / 4;
     background:
-        url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=800') center/cover no-repeat;
+        url('images/workshop-lady.jpg') center/cover no-repeat;
 }
 
 .about-image-secondary {
     aspect-ratio: 3 / 4;
     background:
-        url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?q=80&w=800') center/cover no-repeat;
+        url('images/spray-painting.jpg') center/cover no-repeat;
 }
 
 .about-image-overlay {
@@ -1178,7 +1178,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     position: absolute;
     inset: 0;
     background:
-        url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?q=80&w=1920') center/cover no-repeat;
+        url('images/polishing.jpg') center/cover no-repeat;
     filter: brightness(0.2);
 }
 
