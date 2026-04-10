@@ -141,7 +141,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .nav-logo-img {
-    height: 70px;
+    height: 140px;
     width: auto;
     transition: var(--transition);
 }
@@ -1387,7 +1387,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     padding-bottom: 50px;
 }
 
-.footer-logo { max-width: 320px; margin-bottom: 20px; }
+.footer-logo { max-width: 360px; margin-bottom: 20px; }
 
 .footer-col h4 {
     font-family: var(--font-heading);
@@ -1552,7 +1552,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     .top-bar-inner { justify-content: center; }
     .top-bar-left, .top-bar-right { gap: 14px; }
     .nav-toggle { display: flex; }
-    .nav-logo-img { height: 50px; }
+    .nav-logo-img { height: 90px; }
     .nav-menu {
         position: fixed; top: 0; right: -100%; width: 85%; max-width: 320px; height: 100vh;
         background: var(--white); border-left: 1px solid var(--grey-200);
