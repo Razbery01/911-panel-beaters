@@ -72,7 +72,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .preloader.hidden { opacity: 0; visibility: hidden; }
 .preloader-inner { display: flex; flex-direction: column; align-items: center; gap: 24px; }
-.preloader-logo { max-width: 280px; animation: preloader-pulse 1.2s ease-in-out infinite; }
+.preloader-logo { max-width: 400px; animation: preloader-pulse 1.2s ease-in-out infinite; }
 .preloader-bar { width: 200px; height: 3px; background: var(--grey-200); overflow: hidden; border-radius: 2px; }
 .preloader-bar-fill { height: 100%; width: 40%; background: linear-gradient(90deg, var(--blue), var(--blue-light)); animation: preloader-load 1.2s ease-in-out infinite; }
 @keyframes preloader-pulse { 0%, 100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.04); opacity: 1; } }
@@ -137,11 +137,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 24px;
+    padding: 6px 24px;
 }
 
 .nav-logo-img {
-    height: 56px;
+    height: 110px;
     width: auto;
     transition: var(--transition);
 }
@@ -708,34 +708,54 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* About Visual */
 .about-visual { position: relative; padding: 20px; }
 
+.about-visual {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 16px;
+    padding: 0;
+}
+
 .about-image-wrap {
     position: relative;
-    aspect-ratio: 1 / 1.1;
-    background:
-        url('https://images.unsplash.com/photo-1580983218765-c2d0a6441703?q=80&w=800') center/cover no-repeat;
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
     border: 4px solid var(--white);
 }
 
+.about-image-main {
+    aspect-ratio: 3 / 4;
+    background:
+        url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=800') center/cover no-repeat;
+}
+
+.about-image-secondary {
+    aspect-ratio: 3 / 4;
+    background:
+        url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?q=80&w=800') center/cover no-repeat;
+}
+
 .about-image-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 40, 112, 0.4) 0%, transparent 60%);
+    background: linear-gradient(to top, rgba(0, 40, 112, 0.5) 0%, transparent 50%);
 }
-
-.about-image-grid { display: none; }
 
 .about-image-tag {
     position: absolute;
-    bottom: 24px;
-    left: 24px;
-    padding: 18px 24px;
+    bottom: 20px;
+    left: 20px;
+    padding: 16px 22px;
     background: var(--white);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     z-index: 2;
+}
+
+.about-image-tag-sm {
+    padding: 12px 16px;
+    bottom: 16px;
+    left: 16px;
 }
 
 .about-image-tag-num {
@@ -759,7 +779,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     font-weight: 600;
 }
 
+.about-image-tag-sm .about-image-tag-num {
+    font-size: 2rem;
+}
+
 .about-badge {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -1250,6 +1275,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .contact-icon svg { width: 22px; height: 22px; }
 
+.contact-icon-whatsapp {
+    background: #25D366;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
 .contact-detail h4 {
     font-family: var(--font-heading);
     font-size: 1.1rem;
@@ -1338,7 +1368,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     padding-bottom: 50px;
 }
 
-.footer-logo { max-width: 220px; margin-bottom: 20px; }
+.footer-logo { max-width: 320px; margin-bottom: 20px; }
 
 .footer-col h4 {
     font-family: var(--font-heading);
@@ -1435,6 +1465,42 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 @keyframes float-pulse { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(1.7); opacity: 0; } }
 
+/* WhatsApp Button */
+.float-whatsapp {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 62px;
+    height: 62px;
+    background: #25D366;
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    transition: var(--transition);
+}
+
+.float-whatsapp:hover {
+    transform: scale(1.1) rotate(-8deg);
+    background: #1EBE5C;
+    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+}
+
+.float-whatsapp svg { width: 30px; height: 30px; }
+
+.float-whatsapp-pulse {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: #25D366;
+    animation: float-pulse 2s ease-out infinite;
+    animation-delay: 0.5s;
+    z-index: -1;
+}
+
 /* ==========================================================================
    Scroll Animations
    ========================================================================== */
@@ -1467,7 +1533,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     .top-bar-inner { justify-content: center; }
     .top-bar-left, .top-bar-right { gap: 14px; }
     .nav-toggle { display: flex; }
-    .nav-logo-img { height: 46px; }
+    .nav-logo-img { height: 80px; }
     .nav-menu {
         position: fixed; top: 0; right: -100%; width: 85%; max-width: 320px; height: 100vh;
         background: var(--white); border-left: 1px solid var(--grey-200);
@@ -1496,7 +1562,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     .footer-grid { grid-template-columns: 1fr; gap: 36px; }
     .footer-bottom { flex-direction: column; text-align: center; }
     .float-call { bottom: 20px; right: 20px; width: 54px; height: 54px; }
-    .about-image-wrap { aspect-ratio: 1 / 0.9; }
+    .float-whatsapp { bottom: 84px; right: 20px; width: 54px; height: 54px; }
+    .about-visual { grid-template-columns: 1fr 1fr; }
+    .about-image-main, .about-image-secondary { aspect-ratio: 1 / 1; }
 }
 
 @media (max-width: 480px) {
