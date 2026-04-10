@@ -288,11 +288,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    ========================================================================== */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: 120px 0 80px;
+    padding: 80px 0 60px;
     background: var(--black);
     color: var(--white);
 }
@@ -709,10 +709,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .about-visual { position: relative; padding: 20px; }
 
 .about-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+}
+
+.about-images-top {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     gap: 16px;
-    padding: 0;
 }
 
 .about-image-wrap {
@@ -724,15 +730,21 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .about-image-main {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 5;
     background:
         url('images/grinder-sparks.jpg') center/cover no-repeat;
 }
 
 .about-image-secondary {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 5;
     background:
         url('images/spray-booth.png') center/cover no-repeat;
+}
+
+.about-image-full {
+    aspect-ratio: 16 / 9;
+    background:
+        url('images/hero-bg.jpg') center/cover no-repeat;
 }
 
 .about-image-overlay {
@@ -1563,8 +1575,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     .footer-bottom { flex-direction: column; text-align: center; }
     .float-call { bottom: 20px; right: 20px; width: 54px; height: 54px; }
     .float-whatsapp { bottom: 84px; right: 20px; width: 54px; height: 54px; }
-    .about-visual { grid-template-columns: 1fr 1fr; }
+    .about-images-top { grid-template-columns: 1fr 1fr; }
     .about-image-main, .about-image-secondary { aspect-ratio: 1 / 1; }
+    .about-image-full { aspect-ratio: 16 / 10; }
 }
 
 @media (max-width: 480px) {
