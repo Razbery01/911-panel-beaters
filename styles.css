@@ -308,8 +308,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     position: absolute;
     inset: 0;
     background:
-        url('images/hero-bg.jpg') center/cover no-repeat;
-    filter: brightness(0.3);
+        url('images/workshop-floor.jpg') center/cover no-repeat;
+    filter: brightness(0.35);
 }
 
 .hero-bg::after {
@@ -732,19 +732,19 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .about-image-main {
     aspect-ratio: 4 / 5;
     background:
-        url('images/grinder-sparks.jpg') center/cover no-repeat;
+        url('images/bmw-tow.jpg') center/cover no-repeat;
 }
 
 .about-image-secondary {
     aspect-ratio: 4 / 5;
     background:
-        url('images/spray-booth.png') center/cover no-repeat;
+        url('images/sprinter-ambulance.jpg') center/cover no-repeat;
 }
 
 .about-image-full {
     aspect-ratio: 16 / 9;
     background:
-        url('images/hero-bg.jpg') center/cover no-repeat;
+        url('images/daihatsu-lift.jpg') center/cover no-repeat;
 }
 
 .about-image-overlay { display: none; }
@@ -1197,8 +1197,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     position: absolute;
     inset: 0;
     background:
-        url('images/wheel-repair.jpg') center/cover no-repeat;
-    filter: brightness(0.2);
+        url('images/workshop-floor.jpg') center/cover no-repeat;
+    filter: brightness(0.25);
 }
 
 .cta-bg::after {
