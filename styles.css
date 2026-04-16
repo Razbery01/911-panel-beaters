@@ -71,8 +71,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 .preloader.hidden { opacity: 0; visibility: hidden; }
-.preloader-inner { display: flex; flex-direction: column; align-items: center; gap: 24px; }
-.preloader-logo { max-width: 500px; animation: preloader-pulse 1.2s ease-in-out infinite; }
+.preloader-inner { display: flex; flex-direction: column; align-items: center; gap: 24px; width: 100%; padding: 0 20px; box-sizing: border-box; }
+.preloader-logo { max-width: min(500px, 85vw); width: auto; height: auto; animation: preloader-pulse 1.2s ease-in-out infinite; }
 .preloader-bar { width: 200px; height: 3px; background: var(--grey-200); overflow: hidden; border-radius: 2px; }
 .preloader-bar-fill { height: 100%; width: 40%; background: linear-gradient(90deg, var(--blue), var(--blue-light)); animation: preloader-load 1.2s ease-in-out infinite; }
 @keyframes preloader-pulse { 0%, 100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.04); opacity: 1; } }
